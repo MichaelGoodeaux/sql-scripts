@@ -1,3 +1,6 @@
+-- Regularly need to monitor database sizes for potential shrinking or balacing
+-- This is my quick utility script to check "at a glance" for out of control DBs
+
 SELECT DB_NAME(database_id) AS database_name, 
     type_desc, 
     name AS FileName, 
